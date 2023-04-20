@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-app';
+  name='Angular'
+  imgURL = 'https://picsum.photos/seed/picsum/200/300'
+
+  changeImage(e : KeyboardEvent) {
+    this.imgURL = (e.target as HTMLInputElement).value
+  }
+  getName() {
+    return this.name
+  }
 }
