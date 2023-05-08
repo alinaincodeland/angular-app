@@ -1,6 +1,7 @@
 <input (keyup)="changeImage($event)" [value]="imgURL">
 
-<img [src]="imgURL" alt="Angular Logo" width="300" /> 
+
+
 <p>
  Welcome to {{ name.toUpperCase }}!
 </p>
@@ -13,5 +14,7 @@
  <p>
   {{ 15 + 20 }}!
  </p>
+
+ <app-post [postImg]="imgURL">  </app-post>
 
 <router-outlet></router-outlet>
