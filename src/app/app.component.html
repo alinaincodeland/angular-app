@@ -15,6 +15,6 @@
   {{ 15 + 20 }}!
  </p>
 
- <app-post [postImg]="imgURL">  </app-post>
+ <app-post [img]="imgURL" (imgSelected)="logImg($event)"> </app-post>
 
 <router-outlet></router-outlet>
